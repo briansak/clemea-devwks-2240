@@ -65,7 +65,7 @@ Pod 12: 172.31.84.240 <br />
 
 After running this activity, you should see the details of the instance that you queried in the output body.
 
-<img width="568" alt="image" src="https://user-images.githubusercontent.com/10421515/172463129-832578dd-6891-49f4-8d85-201fbac1179a.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/172463129-832578dd-6891-49f4-8d85-201fbac1179a.png">
 
 8. Next we will extract some data from the returned XML Response using an XPATH Activity.
 
