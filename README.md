@@ -177,3 +177,5 @@ Once the enrichment of the observables is complete, you should see your IP addre
 5. Use the drop-down to show the SecureX orchestration response actions that can be ran against this host, including the one you imported and uniquely named.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173713168-a4a55394-ef21-4d51-bb2b-b8939234ca58.png">
+
+**THANK YOU** for attending this DevNet Workshop and learning about SecureX orchestration.  I'll be putting some links and code into the Webex space associated with this session following this session!  Enjoy your time at Cisco Live!
