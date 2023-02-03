@@ -87,9 +87,9 @@ Next we will extract some data from the returned XML Response using an XPATH Act
 
 12. Click the **"+"** next to XPATH Query.  Fill in the following details:
 
-    Property Name:  **Security Group**  
-    XPath Query:  **//reservationSet/item/instancesSet/item/groupSet/item/groupName**  
-    Property Type: **String**  
+    Property Name:  **Security Group** <br />
+    XPath Query:  **//reservationSet/item/instancesSet/item/groupSet/item/groupName** <br />
+    Property Type: **String** <br />
 
 13. Click **Validate** again at the top of the window and run the workflow again.
 
@@ -110,7 +110,7 @@ We will revisit this created workflow later after we initiate our completed inci
 
 2) Choose, Import from **Git** --> **DEVWKS-2240** for Git Repository, **sxo-aws-ir** for File Name, **Updated Keys** for Git Version, and finally **Import as a New Workflow** and click **Import**.
 
-<img width="607" alt="image" src="https://user-images.githubusercontent.com/10421515/173711084-8e9b0220-ee98-4ed0-b482-e52b86f11489.png">
+<img width="608" alt="image" src="https://user-images.githubusercontent.com/10421515/216683454-c86c3b07-d757-43be-a77a-bae18d4bf574.png">
 
 3) After importing, it will show up as **Copy(1)-AWS Incident Response**.  Open this newly created workflow.
 
@@ -120,6 +120,19 @@ We will revisit this created workflow later after we initiate our completed inci
 
 * Name your workflow **Pod X - AWS Incident Response** replacing the pod number with yours.
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173711715-1849e6ac-150d-4a34-9e1e-dbb02ea800fe.png">
+
+Pod 1: 172.31.31.233 <br />
+Pod 2: 172.31.22.192 <br />
+Pod 3: 172.31.19.34 <br />
+Pod 4: 172.31.28.79 <br />
+Pod 5: 172.31.27.52 <br />
+Pod 6: 172.31.31.163 <br />
+Pod 7: 172.31.92.122 <br />
+Pod 8: 172.31.85.153 <br />
+Pod 9: 172.31.91.202 <br />
+Pod 10: 172.31.83.165 <br />
+Pod 11: 172.31.88.102 <br />
+Pod 12: 172.31.84.240 <br />
 
 * Replace the variable for 'observable_value' to match your pod above.
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173711852-8d854b7a-7017-4b46-b7cd-3f9abcdd5baf.png">
