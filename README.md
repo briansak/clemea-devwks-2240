@@ -3,7 +3,7 @@
 ### Lab Environment: https://expo.ciscodcloud.com/61f3vnmo3a3mzoh0gzq0wfeb6
 > **Right-click and open in a new INCOGNITO MODE/PRIVATE WINDOW**
 
-<img width="472" alt="image" src="https://user-images.githubusercontent.com/10421515/167255166-77d523d5-737d-4bce-a6ba-8e09d39750c6.png">
+<img width="472" alt="image" src="https://user-images.githubusercontent.com/10421515/216669404-59355e96-5906-4227-bb4e-cf8b32eb1ece.png">
 
 _**IaaS API Documentation**_ <br />
 AWS: https://docs.aws.amazon.com <br />
@@ -11,6 +11,7 @@ GCP: https://cloud.google.com/compute/docs/reference/rest/v1 <br />
 Azure: https://docs.microsoft.com/en-us/rest/api/azure <br />
 
 ### Creating Your First AWS Activity
+
 
 > **SHARED ENVIRONMENT ALERT** <br />
 > Make sure you uniquely name your workflow when creating!
@@ -65,6 +66,8 @@ Pod 12: 172.31.84.240 <br />
 After running this activity, you should see the details of the instance that you queried in the output body.
 
 <img width="568" alt="image" src="https://user-images.githubusercontent.com/10421515/172463129-832578dd-6891-49f4-8d85-201fbac1179a.png">
+
+8. Next we will extract some data from the returned XML Response using an XPATH Activity.
 
 ### Importing a workflow from Github
 
