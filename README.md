@@ -87,11 +87,17 @@ Next we will extract some data from the returned XML Response using an XPATH Act
 
 12. Click the **"+"** next to XPATH Query.  Fill in the following details:
 
-    Property Name:  **Security Group**
-    XPath Query:  **//reservationSet/item/instancesSet/item/groupSet/item/groupName**
-    Property Type: String
+    Property Name:  **Security Group**  
+    XPath Query:  **//reservationSet/item/instancesSet/item/groupSet/item/groupName**  
+    Property Type: **String**  
 
 13. Click **Validate** again at the top of the window and run the workflow again.
+
+When the workflow runs this time you'll be able to see the output of the second activity that parses the XML response from the first activity and extracts the name of the assigend Security Group for your EC2 instance.
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216681662-1b6034bb-043b-4331-be29-2c50cf1c9245.png">
+
+We will revisit this created workflow later after we initiate our completed incident response workflow.
 
 ### Importing a workflow from Github
 
