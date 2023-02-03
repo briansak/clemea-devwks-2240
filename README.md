@@ -67,7 +67,31 @@ After running this activity, you should see the details of the instance that you
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/172463129-832578dd-6891-49f4-8d85-201fbac1179a.png">
 
-8. Next we will extract some data from the returned XML Response using an XPATH Activity.
+Next we will extract some data from the returned XML Response using an XPATH Activity.
+
+8. From the **Core** activites list grab and drag the **XPATH Query** and drag it to the canvas.
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216672259-3d7402d3-0400-4712-a271-3e18f1dc161b.png">
+
+9. Rename the activity **Extract Security Group Name**
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216674833-97e490df-1306-4348-9ac9-05f22307b6bf.png">
+
+10. Scroll down on the properties window and find where you will specify **Source XML to Query**.  Click the puzzle piece in the upper-right corner to select a source.
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216677937-8cd1b391-cbbd-4cd0-8726-05750198893a.png">
+
+11. Choose **Activities --> Query EC2 Instance --> Body** and choose **Save**
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216678141-756823d2-5271-478b-9473-74489930d613.png">
+
+12. Click the **"+"** next to XPATH Query.  Fill in the following details:
+
+    Property Name:  **Security Group**
+    XPath Query:  **//reservationSet/item/instancesSet/item/groupSet/item/groupName**
+    Property Type: String
+
+13. Click **Validate** again at the top of the window and run the workflow again.
 
 ### Importing a workflow from Github
 
