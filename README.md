@@ -124,9 +124,19 @@ Override Workflow Target to **AWS_Target**.
 Set the **AWS API Request** URL to the one below and the API Method to **GET**
 ``` https://ec2.amazonaws.com/?Action=CreateTags&ResourceId.1={Your Instance ID}&Tag.1.Key=Isolated&Tag.1.Value=&Version=2016-11-15 ```
 
+<img width="1440" alt="5" src="https://user-images.githubusercontent.com/10421515/217512813-b0e3f9fb-b1c6-439a-96f3-c1c7fbbcdc6e.png">
+
 18. Highlight the **{Your Instance ID}** in the URL string and click the puzzle piece in the upper-right of that field.
 
-<img width="1440" alt="5" src="https://user-images.githubusercontent.com/10421515/217512813-b0e3f9fb-b1c6-439a-96f3-c1c7fbbcdc6e.png">
+<img width="1440" alt="tag1" src="https://user-images.githubusercontent.com/10421515/217561186-7a10fd9e-c4fd-44f0-b4cd-ec8bb418ffc1.png">
+
+Choose **Activities --> Extract EC2 Details --> XPath Queries --> Instance ID**
+
+<img width="618" alt="instanceid" src="https://user-images.githubusercontent.com/10421515/217561549-889d4f84-e1bc-4d09-b115-b91b1de7993e.png">
+
+The resulting URL should show the variable name set as one of the parameters.
+
+<img width="914" alt="awsapi1" src="https://user-images.githubusercontent.com/10421515/217562214-1225cb3f-cee0-426b-a1ec-152011028c85.png">
 
 19. Click into the **Yes** conditional block to set the test condition.  Click on the puzzle piece in the **Left Opperand** field.
 
