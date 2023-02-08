@@ -65,6 +65,10 @@ After running this activity, you should see the details of the instance that you
 
 <img width="1446" alt="first run" src="https://user-images.githubusercontent.com/10421515/217502274-97df6281-d8aa-49d3-80fe-6a09b24a9ced.png">
 
+Click Modify to return to the Workflow Editor
+
+<img width="1440" alt="modify" src="https://user-images.githubusercontent.com/10421515/217640516-705e2c51-4094-430d-8c4b-a4edc47ef845.png">
+
 Next we will extract some data from the returned XML Response using an XPATH Activity.
 
 8. From the **Core** activites list grab and drag the **XPATH Query** and drag it to the canvas.
