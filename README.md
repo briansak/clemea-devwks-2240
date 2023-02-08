@@ -38,18 +38,26 @@ https://ec2.us-east-1.amazonaws.com/?Action=DescribeInstances&Filter.1.Name=priv
 ```
 Replacing "{Value_Below}" with the IP address associated with your pod in the table below and set the API Method to **GET**.
 
-Pod 1: 172.31.31.233 <br />
-Pod 2: 172.31.22.192 <br />
-Pod 3: 172.31.19.34 <br />
-Pod 4: 172.31.28.79 <br />
-Pod 5: 172.31.27.52 <br />
-Pod 6: 172.31.31.163 <br />
-Pod 7: 172.31.92.122 <br />
-Pod 8: 172.31.85.153 <br />
-Pod 9: 172.31.91.202 <br />
-Pod 10: 172.31.83.165 <br />
-Pod 11: 172.31.88.102 <br />
-Pod 12: 172.31.84.240 <br />
+Pod 1: 172.31.22.192
+Pod 11: 172.31.4.177 <br />
+Pod 2: 172.31.19.34
+Pod 12: 172.31.9.192 <br />
+Pod 3: 172.31.28.79
+Pod 13: 172.31.3.5 <br />
+Pod 4: 172.31.7.175
+Pod 14: 172.31.6.32 <br />
+Pod 5: 172.31.11.48
+Pod 15: 172.31.11.139 <br />
+Pod 6: 172.31.14.141
+Pod 16: 172.31.5.13 <br />
+Pod 7: 172.31.9.110
+Pod 17: 172.31.2.231 <br />
+Pod 8: 172.31.12.146
+Pod 18: 172.31.4.105 <br />
+Pod 9: 172.31.6.146
+Pod 19: 172.31.0.150 <br />
+Pod 10: 172.31.13.208
+Pod 20: 172.31.7.250 <br />
 
 <img width="589" alt="image" src="https://user-images.githubusercontent.com/10421515/173710456-a0f3eff7-9b4a-4c71-8db8-505aeb3bb501.png">
 
