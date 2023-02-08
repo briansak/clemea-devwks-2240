@@ -25,7 +25,7 @@ Create a new activity that will provide the details of an EC2 instance, followin
 
 2. Drag **AWS Service** --> **Generic AWS API Request** to the canvas
 
-<img width="1441" alt="image" src="https://user-images.githubusercontent.com/10421515/173708677-0a6d9e16-1661-421d-b23f-1cdc71f78044.png">
+<img width="1441" alt="awsactivity" src="https://user-images.githubusercontent.com/10421515/217501771-e2acfc9d-3e66-4637-89ca-b90b76dceeee.png">
 
 3. Name the activity **Query EC2 Instance** in the activity Display Name
 4. Override the workflow target with: **AWS_Target**
