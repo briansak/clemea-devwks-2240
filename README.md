@@ -185,7 +185,8 @@ We will revisit this created workflow later after we initiate our completed inci
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173711715-1849e6ac-150d-4a34-9e1e-dbb02ea800fe.png">
 
 5. Replace the variable for **'observable_value'** with the IP address for your pod from the table below.
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173711852-8d854b7a-7017-4b46-b7cd-3f9abcdd5baf.png">
+
+<img width="1440" alt="observable" src="https://user-images.githubusercontent.com/10421515/217571825-0aa28061-3290-4bfd-a3e5-79fb2094439d.png">
 
 |     |     |
 | --- | --- |
@@ -199,6 +200,10 @@ We will revisit this created workflow later after we initiate our completed inci
 | Pod 8: 172.31.12.146 | Pod 18: 172.31.4.105 |
 | Pod 9: 172.31.6.146 | Pod 19: 172.31.0.150 |
 | Pod 10: 172.31.13.208 | Pod 20: 172.31.7.250 |
+
+Replace the value for your pod and click save.
+
+<img width="602" alt="observable2" src="https://user-images.githubusercontent.com/10421515/217571749-e5cdd295-e06f-47c6-bdce-2fbf20664553.png">
 
 Note the activites in this workflow that automate many of the steps outlined in the AWS EC2 Incident Response Guide.
 
@@ -214,17 +219,18 @@ Note the activites in this workflow that automate many of the steps outlined in 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173712097-05b9094c-e06f-422f-aadf-c88a004e4e52.png">
 
 7. Return to your previously created workflow **Pod X - AWS Workflow** that pulls instance details and run the workflow again.
-I 
-8. Click on the **Extract Security Group Name** activty and note that after running the incident response workflow, the Security Group has been changed to move the impacted host to an isolated security group.
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216684838-535b37c8-cb18-49f2-9ef0-380f5b9fbce8.png">
+9. Click on the **Extract EC2 Details** activty and note that after running the incident response workflow, the Security Group has been changed to move the impacted host to an isolated security group (Isolate_SG) and our condition now matches and the additional tagging activity has been run to identify the host as isolated.
+
+<img width="1440" alt="third run" src="https://user-images.githubusercontent.com/10421515/217573576-b129f4f5-d9d0-415a-ad4d-3694ccebf5d2.png">
 
 ### Integration with SecureX threat response
 
 1. Click **Dashboard** at the top of the SecureX Window to exit out of the Orchestration tool.
 
 2. Expand the **Ribbon** at the bottom of the screen to see created casebooks and incidents for this environment.
-3. Find the **DEVWKS-2240 Casebook** Casebook created "By Others" by searching for 'DEVWKS' in the casebook pane.
+
+4. Find the **DEVWKS-2240 Casebook** Casebook created "By Others" by searching for 'DEVWKS' in the casebook pane.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173712877-c8889a14-392b-4454-8012-03f7b4002c5d.png">
 
