@@ -222,7 +222,7 @@ Note the activites in this workflow that automate many of the steps outlined in 
 
 9. Click on the **Extract EC2 Details** activty and note that after running the incident response workflow, the Security Group has been changed to move the impacted host to an isolated security group (Isolate_SG) and our condition now matches and the additional tagging activity has been run to identify the host as isolated.
 
-<img width="1440" alt="third run" src="https://user-images.githubusercontent.com/10421515/217573576-b129f4f5-d9d0-415a-ad4d-3694ccebf5d2.png">
+<img width="1440" alt="third run" src="https://user-images.githubusercontent.com/10421515/217574158-8c1c3073-d447-45ac-bd5d-e1ff5611a231.png">
 
 ### Integration with SecureX threat response
 
