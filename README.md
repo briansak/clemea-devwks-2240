@@ -128,7 +128,7 @@ Set the **AWS API Request** URL to the one below and the API Method to **GET**
 
 18. Highlight the **{Your Instance ID}** in the URL string and click the puzzle piece in the upper-right of that field.
 
-<img width="1440" alt="tag1" src="https://user-images.githubusercontent.com/10421515/217561186-7a10fd9e-c4fd-44f0-b4cd-ec8bb418ffc1.png">
+<img width="1441" alt="tag1" src="https://user-images.githubusercontent.com/10421515/217563952-29bb7057-b6ec-48e3-9733-c208b9777c26.png">
 
 Choose **Activities --> Extract EC2 Details --> XPath Queries --> Instance ID**
 
@@ -138,7 +138,11 @@ The resulting URL should show the variable name set as one of the parameters.
 
 <img width="914" alt="awsapi1" src="https://user-images.githubusercontent.com/10421515/217562214-1225cb3f-cee0-426b-a1ec-152011028c85.png">
 
-19. Click into the **Yes** conditional block to set the test condition.  Click on the puzzle piece in the **Left Opperand** field.
+19. Since we only have one condition, you can delete the other conditional branch.  By clicking on it, choosing the three dots, and choosing **Delete**.
+
+<img width="1440" alt="delete" src="https://user-images.githubusercontent.com/10421515/217564957-25552a79-ca77-4ae1-bb58-819bfca78a70.png">
+
+20. Click into the **Yes** conditional branch to set the test condition.  Click on the puzzle piece in the **Left Opperand** field.
 
 <img width="1440" alt="Condition" src="https://user-images.githubusercontent.com/10421515/217514255-71b49128-a605-4413-9049-dbef399387db.png">
 
@@ -150,7 +154,7 @@ Then specify **Isolated_SG** as the **Right Opperand**.  When completed, it shou
 
 <img width="1440" alt="conditional 2" src="https://user-images.githubusercontent.com/10421515/217514942-195e73fb-eec6-4039-a0a7-8fb67a1d338c.png">
 
-20. Click **Validate** again at the top of the window and run the workflow again.
+21. Click **Validate** again at the top of the window and run the workflow again.
 
 <img width="1440" alt="validate 2" src="https://user-images.githubusercontent.com/10421515/217512954-05529e9c-46f7-4cc4-b286-e3f708d35a7c.png">
 
