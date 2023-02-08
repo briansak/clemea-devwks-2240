@@ -119,15 +119,16 @@ Next we'll add a simple conditional block to check if one of our variables match
 
 17. In the properties of the Tag EC2 Instance, scroll down and supply the following details:
 
-Override Workflow Target:  **AWS_Target**
+Override Workflow Target to **AWS_Target**.
 
-AWS API Request
-URL: ``` https://ec2.amazonaws.com/?Action=CreateTags&ResourceId.1={Your Instance ID}&Tag.1.Key=Isolated&Tag.1.Value=&Version=2016-11-15 ```
-API Method: GET
+Set the **AWS API Request** URL to the one below and the API Method to **GET**
+``` https://ec2.amazonaws.com/?Action=CreateTags&ResourceId.1={Your Instance ID}&Tag.1.Key=Isolated&Tag.1.Value=&Version=2016-11-15 ```
+
+18. Highlight the **{Your Instance ID}** in the URL string and click the puzzle piece in the upper-right of that field.
 
 <img width="1440" alt="5" src="https://user-images.githubusercontent.com/10421515/217512813-b0e3f9fb-b1c6-439a-96f3-c1c7fbbcdc6e.png">
 
-18. Click into the **Yes** conditional block to set the test condition.  Click on the puzzle piece in the **Left Opperand** field.
+19. Click into the **Yes** conditional block to set the test condition.  Click on the puzzle piece in the **Left Opperand** field.
 
 <img width="1440" alt="Condition" src="https://user-images.githubusercontent.com/10421515/217514255-71b49128-a605-4413-9049-dbef399387db.png">
 
@@ -139,7 +140,7 @@ Then specify **Isolated_SG** as the **Right Opperand**.  When completed, it shou
 
 <img width="1440" alt="conditional 2" src="https://user-images.githubusercontent.com/10421515/217514942-195e73fb-eec6-4039-a0a7-8fb67a1d338c.png">
 
-13. Click **Validate** again at the top of the window and run the workflow again.
+20. Click **Validate** again at the top of the window and run the workflow again.
 
 <img width="1440" alt="validate 2" src="https://user-images.githubusercontent.com/10421515/217512954-05529e9c-46f7-4cc4-b286-e3f708d35a7c.png">
 
