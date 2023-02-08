@@ -38,14 +38,17 @@ https://ec2.us-east-1.amazonaws.com/?Action=DescribeInstances&Filter.1.Name=priv
 ```
 Replacing "{Value_Below}" with the IP address associated with your pod in the table below and set the API Method to **GET**.
 
-| -----------------------| -------------------- |
-| Pod 1: 172.31.22.192   | Pod 11: 172.31.4.177 |
+
+     |     |
+| --- | --- |
+| Pod 1: 172.31.22.192 | Pod 11: 172.31.4.177 |
+| Pod 2: 172.31.19.34 | Pod 12: 172.31.9.192 |
 
 
 
  <br />
-Pod 2: 172.31.19.34
-Pod 12: 172.31.9.192 <br />
+
+ <br />
 Pod 3: 172.31.28.79
 Pod 13: 172.31.3.5 <br />
 Pod 4: 172.31.7.175
