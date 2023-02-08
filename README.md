@@ -118,11 +118,33 @@ Next we'll add a simple conditional block to check if one of our variables match
 
 <img width="1440" alt="4" src="https://user-images.githubusercontent.com/10421515/217506872-d8c606c8-73a7-4f05-a54d-d3370931a7f8.png">
 
-17. In the properties of the Tag EC2 Instance, scroll down and supply the following details
+17. In the properties of the Tag EC2 Instance, scroll down and supply the following details:
+
+Override Workflow Target:  **AWS_Target**
+
+AWS API Request
+URL: ``` https://ec2.amazonaws.com/?Action=CreateTags&ResourceId.1={Your Instance ID}&Tag.1.Key=Isolated&Tag.1.Value=&Version=2016-11-15 ```
+API Method: GET
+
+<img width="1440" alt="5" src="https://user-images.githubusercontent.com/10421515/217512813-b0e3f9fb-b1c6-439a-96f3-c1c7fbbcdc6e.png">
+
+18. Click into the **Yes** conditional block to set the test condition.  Click on the puzzle piece in the **Left Opperand** field.
+
+<img width="1440" alt="Condition" src="https://user-images.githubusercontent.com/10421515/217514255-71b49128-a605-4413-9049-dbef399387db.png">
+
+Choose **Activities --> Extract EC2 Details --> XPath Queries --> Security Group**
+
+<img width="626" alt="rightoperand" src="https://user-images.githubusercontent.com/10421515/217514576-105996a9-d205-4b2f-9f03-896b5ef2c864.png">
+
+Then specify **Isolated_SG** as the **Right Opperand**.  When completed, it should look like the graphic below.
+
+<img width="1440" alt="conditional 2" src="https://user-images.githubusercontent.com/10421515/217514942-195e73fb-eec6-4039-a0a7-8fb67a1d338c.png">
 
 13. Click **Validate** again at the top of the window and run the workflow again.
 
-When the workflow runs this time you'll be able to see the output of the second activity that parses the XML response from the first activity and extracts the name of the assigend Security Group for your EC2 instance.
+<img width="1440" alt="validate 2" src="https://user-images.githubusercontent.com/10421515/217512954-05529e9c-46f7-4cc4-b286-e3f708d35a7c.png">
+
+When the workflow runs this time you'll be able to see the output of the second activity that parses the XML response from the first activity and extracts the name of the Instance and assigend Security Group for your EC2 instance.  You'll notice that the conditional block doesn't trigger since the condition we specified doesn't match.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216681662-1b6034bb-043b-4331-be29-2c50cf1c9245.png">
 
