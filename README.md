@@ -34,9 +34,9 @@ Create a new activity that will provide the details of an EC2 instance, followin
 4. Specify the URL near the bottom of the activity properties with:
 
 ```
-https://ec2.us-east-1.amazonaws.com/?Action=DescribeInstances&Filter.1.Name=private-ip-address&Filter.1.Value={Value_Below}&Version=2016-11-15
+https://ec2.us-east-1.amazonaws.com/?Action=DescribeInstances&Filter.1.Name=private-ip-address&Filter.1.Value=YOUR_POD_IP&Version=2016-11-15
 ```
-Replacing "{Value_Below}" with the IP address associated with your pod in the table below and set the API Method to **GET**.
+Replacing "YOUR_POD_IP" with the IP address associated with your pod in the table below and set the API Method to **GET**.
 
 |     |     |
 | --- | --- |
@@ -126,11 +126,14 @@ Next we'll add a simple conditional block to check if one of our variables match
 Override Workflow Target to **AWS_Target**.
 
 Set the **AWS API Request** URL to the one below and the API Method to **GET**
-``` https://ec2.amazonaws.com/?Action=CreateTags&ResourceId.1={Your Instance ID}&Tag.1.Key=Isolated&Tag.1.Value=&Version=2016-11-15 ```
+
+```
+https://ec2.amazonaws.com/?Action=CreateTags&ResourceId.1=INSTANCE_ID&Tag.1.Key=Isolated&Tag.1.Value=&Version=2016-11-15
+```
 
 <img width="1440" alt="5" src="https://user-images.githubusercontent.com/10421515/217512813-b0e3f9fb-b1c6-439a-96f3-c1c7fbbcdc6e.png">
 
-18. Highlight the **{Your Instance ID}** in the URL string and click the puzzle piece in the upper-right of that field.
+18. Highlight the **INSTANCE_ID** in the URL string and click the puzzle piece in the upper-right of that field.
 
 <img width="1441" alt="tag1" src="https://user-images.githubusercontent.com/10421515/217563952-29bb7057-b6ec-48e3-9733-c208b9777c26.png">
 
@@ -146,7 +149,7 @@ The resulting URL should show the variable name set as one of the parameters.
 
 <img width="1440" alt="delete" src="https://user-images.githubusercontent.com/10421515/217564957-25552a79-ca77-4ae1-bb58-819bfca78a70.png">
 
-20. Click into the **Yes** conditional branch to set the test condition.  Click on the puzzle piece in the **Left Opperand** field.
+20. Click into the **Yes** conditional branch to set the test condition.  Click on the puzzle piece in the **Left Operand** field.
 
 <img width="1440" alt="Condition" src="https://user-images.githubusercontent.com/10421515/217514255-71b49128-a605-4413-9049-dbef399387db.png">
 
@@ -154,7 +157,7 @@ Choose **Activities --> Extract EC2 Details --> XPath Queries --> Security Group
 
 <img width="626" alt="rightoperand" src="https://user-images.githubusercontent.com/10421515/217514576-105996a9-d205-4b2f-9f03-896b5ef2c864.png">
 
-Then specify **Isolated_SG** as the **Right Opperand**.  When completed, it should look like the graphic below.
+Then specify **Isolated_SG** as the **Right Operand**.  When completed, it should look like the graphic below.
 
 <img width="1440" alt="conditional 2" src="https://user-images.githubusercontent.com/10421515/217514942-195e73fb-eec6-4039-a0a7-8fb67a1d338c.png">
 
