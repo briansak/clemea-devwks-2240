@@ -70,15 +70,15 @@ Next we will extract some data from the returned XML Response using an XPATH Act
 
 8. From the **Core** activites list grab and drag the **XPATH Query** and drag it to the canvas.
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216672259-3d7402d3-0400-4712-a271-3e18f1dc161b.png">
+<img width="1440" alt="xpath" src="https://user-images.githubusercontent.com/10421515/217502908-aa6377d4-192e-4383-86fb-27d0dd0aa845.png">
 
-9. Rename the activity **Extract Security Group Name**
+9. Rename the activity **Extract EC2 Details**
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216674833-97e490df-1306-4348-9ac9-05f22307b6bf.png">
+<img width="1440" alt="xml query" src="https://user-images.githubusercontent.com/10421515/217503035-11e3b1d3-ca8c-418a-af54-4f3fe6a7d5d5.png">
 
 10. Scroll down on the properties window and find where you will specify **Source XML to Query**.  Click the puzzle piece in the upper-right corner to select a source.
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216677937-8cd1b391-cbbd-4cd0-8726-05750198893a.png">
+<img width="1440" alt="xml query" src="https://user-images.githubusercontent.com/10421515/217503035-11e3b1d3-ca8c-418a-af54-4f3fe6a7d5d5.png">
 
 11. Choose **Activities --> Query EC2 Instance --> Body** and choose **Save**
 
