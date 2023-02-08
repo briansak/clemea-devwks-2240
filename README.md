@@ -160,7 +160,7 @@ Then specify **Isolated_SG** as the **Right Opperand**.  When completed, it shou
 
 When the workflow runs this time you'll be able to see the output of the second activity that parses the XML response from the first activity and extracts the name of the Instance and assigend Security Group for your EC2 instance.  You'll notice that the conditional block doesn't trigger since the condition we specified doesn't match.
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216681662-1b6034bb-043b-4331-be29-2c50cf1c9245.png">
+<img width="1440" alt="second run" src="https://user-images.githubusercontent.com/10421515/217566022-b4fb4647-acf7-4452-9cc3-6108a3c1f508.png">
 
 We will revisit this created workflow later after we initiate our completed incident response workflow.
 
