@@ -86,6 +86,12 @@ Next we will extract some data from the returned XML Response using an XPATH Act
 
 12. Click the **"+"** next to XPATH Query.  Fill in the following details:
 
+    Property Name:  **Instance ID** <br />
+    XPath Query:  **//reservationSet/item/instancesSet/item/instanceId** <br />
+    Property Type: **String** <br />
+
+    Click the **"+"** again to add another variable.
+    
     Property Name:  **Security Group** <br />
     XPath Query:  **//reservationSet/item/instancesSet/item/groupSet/item/groupName** <br />
     Property Type: **String** <br />
