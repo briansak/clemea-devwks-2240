@@ -181,10 +181,11 @@ We will revisit this created workflow later after we initiate our completed inci
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173711264-43a14855-cc98-45f9-85c6-b1c559343c77.png">
 
-4. Open your new workflow and make the following changes: <br />
-
-* Name your workflow **Pod X - AWS Incident Response** replacing the pod number with yours.
+4. Name your workflow **Pod X - AWS Incident Response** replacing the pod number with yours.
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173711715-1849e6ac-150d-4a34-9e1e-dbb02ea800fe.png">
+
+5. Replace the variable for **'observable_value'** with the IP address for your pod from the table below.
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173711852-8d854b7a-7017-4b46-b7cd-3f9abcdd5baf.png">
 
 |     |     |
 | --- | --- |
@@ -199,9 +200,6 @@ We will revisit this created workflow later after we initiate our completed inci
 | Pod 9: 172.31.6.146 | Pod 19: 172.31.0.150 |
 | Pod 10: 172.31.13.208 | Pod 20: 172.31.7.250 |
 
-* Replace the variable for 'observable_value' to match your pod above.
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173711852-8d854b7a-7017-4b46-b7cd-3f9abcdd5baf.png">
-
 Note the activites in this workflow that automate many of the steps outlined in the AWS EC2 Incident Response Guide.
 
 > * Enables Termination Protection on the instance
@@ -211,13 +209,13 @@ Note the activites in this workflow that automate many of the steps outlined in 
 > * Snapshots connected Elastic Block Storage devices
 > * Tags the instance with IR details
 
-5. Run your imported workflow.
+6. Run your imported workflow.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173712097-05b9094c-e06f-422f-aadf-c88a004e4e52.png">
 
-6. Return to your previously created workflow **Query EC2 Instance** that pulls instance details and run the workflow again.
-
-7. Click on the **Extract Security Group Name** activty and note that after running the incident response workflow, the Security Group has been changed to move the impacted host to an isolated security group.
+7. Return to your previously created workflow **Pod X - AWS Workflow** that pulls instance details and run the workflow again.
+I 
+8. Click on the **Extract Security Group Name** activty and note that after running the incident response workflow, the Security Group has been changed to move the impacted host to an isolated security group.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/216684838-535b37c8-cb18-49f2-9ef0-380f5b9fbce8.png">
 
