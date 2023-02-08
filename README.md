@@ -21,7 +21,7 @@ Create a new activity that will provide the details of an EC2 instance, followin
 
 1. Create a **New Workflow**
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173708449-fbad4207-16f6-488c-860f-1fdceeed8fc5.png">
+<img width="1440" alt="newworkflow" src="https://user-images.githubusercontent.com/10421515/217500740-16af2de6-3530-4273-ad4a-fea908aac3a9.png">
 
 2. Drag **AWS Service** --> **Generic AWS API Request** to the canvas
 
