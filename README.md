@@ -74,7 +74,7 @@ Next we will extract some data from the returned XML Response using an XPATH Act
 
 9. Rename the activity **Extract EC2 Details**
 
-<img width="1440" alt="xml query" src="https://user-images.githubusercontent.com/10421515/217503035-11e3b1d3-ca8c-418a-af54-4f3fe6a7d5d5.png">
+<img width="1440" alt="name xpath" src="https://user-images.githubusercontent.com/10421515/217505564-bdc29914-b961-4755-b7ea-a1b531494388.png">
 
 10. Scroll down on the properties window and find where you will specify **Source XML to Query**.  Click the puzzle piece in the upper-right corner to select a source.
 
@@ -95,6 +95,30 @@ Next we will extract some data from the returned XML Response using an XPATH Act
     Property Name:  **Security Group** <br />
     XPath Query:  **//reservationSet/item/instancesSet/item/groupSet/item/groupName** <br />
     Property Type: **String** <br />
+
+The properties should look like the graphic below.
+
+<img width="1443" alt="xml query 3" src="https://user-images.githubusercontent.com/10421515/217504755-dcdfa1ce-f7f7-4aaf-86ee-d10882468ce9.png">
+
+Next we'll add a simple conditional block to check if one of our variables matches a specific value.
+
+13. Click on the **Logic** tab of the navigation, expand Logic and drag the **Condition Block** to the canvas.
+
+<img width="1440" alt="1" src="https://user-images.githubusercontent.com/10421515/217505730-ba49c1ec-191a-49b5-b9a6-1bfeb3104f48.png">
+
+14. Click on each of larger block and rename it **Is Instance Isolated?** and the smaller block on the left and name it **Yes**.
+
+<img width="1440" alt="2" src="https://user-images.githubusercontent.com/10421515/217506053-aa65d08a-1e88-46c2-bbbd-53f3104eeb85.png">
+
+15. Click on the **Activities** tab of the navigation, locate the **Generic AWS API Request** from the AWS Service section and drag it to the canvas into the **Yes** block.
+
+<img width="1443" alt="3" src="https://user-images.githubusercontent.com/10421515/217506693-e9927e8c-2f74-4a30-8796-f8c0f7c8e537.png">
+
+16. Change the activity name to **Tag EC2 Instance**.
+
+<img width="1440" alt="4" src="https://user-images.githubusercontent.com/10421515/217506872-d8c606c8-73a7-4f05-a54d-d3370931a7f8.png">
+
+17. In the properties of the Tag EC2 Instance, scroll down and supply the following details
 
 13. Click **Validate** again at the top of the window and run the workflow again.
 
