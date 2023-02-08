@@ -56,11 +56,11 @@ Pod 12: 172.31.84.240 <br />
 
 6. Click on the "Start" element in the workflow and customize the workflow "Display Name" to **Pod # - Query EC2 Instance**
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173709384-ae518382-8d55-4652-a63e-637976a9568a.png">
+<img width="1440" alt="workflow name" src="https://user-images.githubusercontent.com/10421515/217502201-fa637a5b-1653-41c9-83ac-ffa29bd894c1.png">
 
 7. Validate and Run this workflow near the top of the canvas.
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173709797-50d88ba1-9abc-4593-831d-5b08ccc66120.png">
+<img width="1446" alt="first run" src="https://user-images.githubusercontent.com/10421515/217502274-97df6281-d8aa-49d3-80fe-6a09b24a9ced.png">
 
 After running this activity, you should see the details of the instance that you queried in the output body.
 
