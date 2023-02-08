@@ -23,16 +23,15 @@ Create a new activity that will provide the details of an EC2 instance, followin
 
 <img width="1440" alt="newworkflow" src="https://user-images.githubusercontent.com/10421515/217500740-16af2de6-3530-4273-ad4a-fea908aac3a9.png">
 
-2. Drag **AWS Service** --> **Generic AWS API Request** to the canvas
+2. From the activities tab, drag the **AWS Service** --> **Generic AWS API Request** actiivity to the canvas.
 
 <img width="1441" alt="awsactivity" src="https://user-images.githubusercontent.com/10421515/217501771-e2acfc9d-3e66-4637-89ca-b90b76dceeee.png">
 
-3. Name the activity **Query EC2 Instance** in the activity Display Name
-4. Override the workflow target with: **AWS_Target**
+3. Name the activity **Query EC2 Instance** in the activity Display Name and Override the workflow target with: **AWS_Target** in the activity properties.
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/10421515/173708851-fde409ab-e0ae-43b1-b36a-f3e0054896ad.png">
 
-5. Specify the URL near the bottom of the activity properties with:
+4. Specify the URL near the bottom of the activity properties with:
 
 ```
 https://ec2.us-east-1.amazonaws.com/?Action=DescribeInstances&Filter.1.Name=private-ip-address&Filter.1.Value={Value_Below}&Version=2016-11-15
