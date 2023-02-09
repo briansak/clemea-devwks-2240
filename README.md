@@ -157,7 +157,7 @@ Choose **Activities --> Extract EC2 Details --> XPath Queries --> Security Group
 
 <img width="626" alt="rightoperand" src="https://user-images.githubusercontent.com/10421515/217514576-105996a9-d205-4b2f-9f03-896b5ef2c864.png">
 
-Then specify **Isolated_SG** as the **Right Operand**.  When completed, it should look like the graphic below.
+Then specify **Isolate_SG** as the **Right Operand**.  When completed, it should look like the graphic below.
 
 <img width="1440" alt="conditional 2" src="https://user-images.githubusercontent.com/10421515/217514942-195e73fb-eec6-4039-a0a7-8fb67a1d338c.png">
 
