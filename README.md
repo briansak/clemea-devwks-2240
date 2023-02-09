@@ -53,7 +53,7 @@ Replacing "YOUR_POD_IP" with the IP address associated with your pod in the tabl
 
 <img width="589" alt="image" src="https://user-images.githubusercontent.com/10421515/173710456-a0f3eff7-9b4a-4c71-8db8-505aeb3bb501.png">
 
-6. Click on the "Start" element in the workflow and customize the workflow "Display Name" to **Pod # - Query EC2 Instance**
+6. Click on the "Start" element in the workflow and customize the workflow "Display Name" to **Pod # - AWS Workflow**
 
 <img width="1440" alt="workflow name" src="https://user-images.githubusercontent.com/10421515/217502201-fa637a5b-1653-41c9-83ac-ffa29bd894c1.png">
 
